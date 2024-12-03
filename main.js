@@ -71,14 +71,9 @@ while (i < englishNumbers.length) {
     i++
 }
 
-
-i=0
-
 for (eachIndex in englishNumbers) {
     console.log(englishNumbers[eachIndex])
 }
-
-
 
 let words = ["ben", "ha", "spla", "fa", "ca", "dra"];
 
@@ -87,3 +82,19 @@ for (word in words) {
 }
 
 console.log(words);
+
+i = 0
+random_array = []
+
+function randomNumberGenerator(min,max) {
+    range = max - min
+    
+    while (i < range+1) {
+        random_array[i] = min + i
+        i++
+    }
+    index_value = Math.random() * range
+    random_number = random_array[Math.floor(index_value)]
+    console.log(random_number)
+
+}
