@@ -78,3 +78,12 @@ for (eachIndex in englishNumbers) {
     console.log(englishNumbers[eachIndex])
 }
 
+
+
+let words = ["ben", "ha", "spla", "fa", "ca", "dra"];
+
+for (word in words) {
+    words[word] = words[word]+"t"
+}
+
+console.log(words);
